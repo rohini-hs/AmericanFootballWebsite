@@ -5,6 +5,10 @@
 
     // load the dropdown list (see function below)
     initTeamsDropdown();
+
+    let btnteams = document.getElementById("btnselect")
+    btnteams.onclick = msgOnbtnClick;
+
 }
     // other stuff
 
@@ -46,7 +50,15 @@
            TeamsList.appendChild(theOption);
         }
      }
-     
+
+     function msgOnbtnClick()
+     {
+       let msgDiv = document.getElementById("msgDiv");
+       const TeamsList = document.getElementById("football");
+       let selectedValue = TeamsList.value;
+       msgDiv.innerHTML = selectedValue;
+
+     }
      
      
  
