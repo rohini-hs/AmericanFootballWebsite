@@ -31,9 +31,9 @@
               name:"Kansas City Chiefs", 
               locatedIn:"Kansas City, MO"
             }
+          
           ];
-
-
+         
         // load the dropdown list
     
         const TeamsList = document.getElementById("football");
@@ -49,6 +49,19 @@
            // select element
            TeamsList.appendChild(theOption);
         }
+        
+        /*var option = document.createElement("option");
+        option.value = "";
+        option.text = "Select an Item";
+        TeamsList[0].appendChild(option);*/
+
+        const TeamsList1 = document.getElementById("football");
+        var option = document.createElement("option");
+        option.text = "Select your team";
+        TeamsList1.add(option, TeamsList1[0]);
+
+        /*TeamsList.add(new Option('Select an item','',TeamsList[0]));*/
+    
      }
 
      function msgOnbtnClick()
